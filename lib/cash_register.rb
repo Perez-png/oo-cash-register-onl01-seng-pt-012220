@@ -19,6 +19,10 @@ cash_register.total = 100
 (cash_register.total).to eq (100)
 end
 
+def add_item = add_item_and_price += (num)
+  
+end
+
 
 end
 
