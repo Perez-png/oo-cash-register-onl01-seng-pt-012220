@@ -40,6 +40,16 @@ def updated_total = current_total
   ("after the discount, the total comes to $800")
 end
 
+def reduces the total = 0 
+  cash_register.total = 0 
+  cash_register_with_discunt.additem ("air", 1000)
+  {cash_register_with_discount.apply_discount} .to eq
+  change {cash_regsiter_with_discount.total}.by(-200)
+end
+
+
+
+
 end
 
 
