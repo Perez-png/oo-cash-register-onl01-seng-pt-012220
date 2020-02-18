@@ -34,6 +34,11 @@ def employee_discount = total_price + discount = price
   (cash_register_with_discount.total).to eq (800)
 end
 
+def updated_total = current_total
+  
+end
+
+
 
 end
 
