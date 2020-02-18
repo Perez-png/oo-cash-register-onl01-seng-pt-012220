@@ -4,6 +4,9 @@ class CashRegister
   attr_accessor :CashRegister, :CashRegister.new 
   @cash_register = cash_register
   @CashRegister = CashRegister.new
+  @@all = []
+end
+
   
 end
 
