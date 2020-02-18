@@ -1,3 +1,5 @@
+require pry 
+
 class CashRegister
   attr_accessor :CashRegister, :CashRegister.new 
   @cash_register = cash_register
