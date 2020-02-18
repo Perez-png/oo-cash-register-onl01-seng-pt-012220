@@ -35,7 +35,11 @@ def employee_discount = total_price + discount = price
 end
 
 def updated_total = current_total
-  
+  cash_register_with_discount.add_item ("air", 1000)
+  (cash_register_with_discount.apply_discount) .to eq
+  ("after the discount, the total comes to $800")
+end
+
 end
 
 
