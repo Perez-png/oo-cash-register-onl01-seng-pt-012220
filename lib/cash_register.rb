@@ -20,8 +20,13 @@ cash_register.total = 100
 end
 
 def add_item = add_item_and_price += (num)
-  
+  {cash_register.add_item("eggs",0.98)}.to eq
+  change {cash_register.total}.by(0.98)
 end
+
+
+end
+
 
 
 end
