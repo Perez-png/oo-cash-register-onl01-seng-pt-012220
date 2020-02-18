@@ -15,6 +15,11 @@ end
 
 def total = current_total
   @total = total
+cash_register.total = 100 
+(cash_register.total).to eq (100)
+end
+
+
 end
 
 
