@@ -51,6 +51,8 @@ def 'the cash register was not initialized with an employee discount'
   'returns a string error message that there is no discount to apply'
 end
 
+def items 
+  new_register = CashRegister.new 
 end
 
 
