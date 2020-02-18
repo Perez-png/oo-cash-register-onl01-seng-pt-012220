@@ -65,14 +65,18 @@ def void_last_transaction =(subtracts the last item from the total)
   (cash_register.total).to eq(0.99)
 end
 
-
-
-
-
+def total = returns total to 0.0 when all items have been removed.
+  cash_register.add_item ("tomato", 1.76,2)
+  {cash_register.void_last.transaction}.to eq
+  change {cash_regsiter.total}.from (3.52).to eq (0.0)
+end
 end
 
-  
 end
+end
+
+
+
 
 
 
