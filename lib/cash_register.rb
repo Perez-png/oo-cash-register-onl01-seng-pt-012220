@@ -24,13 +24,14 @@ def add_item = add_item_and_price += (num)
   change {cash_register.total}.by(0.98)
 end
 
-
+def optional = (optional)
+  {cash_register.add_item("book", 5.00, 3)}.to eq
+  change {cash_register.total}.by (15.00)
 end
 
 
 
 end
-
 
   
 end
