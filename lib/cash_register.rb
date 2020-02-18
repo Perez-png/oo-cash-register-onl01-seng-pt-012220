@@ -53,7 +53,14 @@ end
 
 def items 
   new_register = CashRegister.new 
+  new_register.add_item ("eggs", 1.99)
+  new_register.add_item("tomato", 1.78, 3)
+  (new_register.items).to eq(["eggs","tomato", "tomato"])
 end
+
+
+
+
 
 
 
