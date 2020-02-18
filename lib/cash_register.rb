@@ -47,8 +47,9 @@ def reduces the total = 0
   change {cash_regsiter_with_discount.total}.by(-200)
 end
 
-
-
+def 'the cash register was not initialized with an employee discount'
+  'returns a string error message that there is no discount to apply'
+end
 
 end
 
