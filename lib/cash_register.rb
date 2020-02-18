@@ -29,6 +29,10 @@ def optional = (optional)
   change {cash_register.total}.by (15.00)
 end
 
+def employee_discount = total_price + discount = price 
+  {cash_register_with_discount.add_item ("air", 1000)}
+  (cash_register_with_discount.total).to eq (800)
+end
 
 
 end
